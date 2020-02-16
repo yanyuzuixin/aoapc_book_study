@@ -5,7 +5,6 @@ project(aoapc_projects)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
 
 add_subdirectory(ch1)
-
 add_executable(ex1_1 $<TARGET_OBJECTS:ex1_1_obj>)
 add_executable(ex1_2 $<TARGET_OBJECTS:ex1_2_obj>)
 add_executable(ex1_3 $<TARGET_OBJECTS:ex1_3_obj>)
@@ -19,3 +18,8 @@ add_executable(ex1_10 $<TARGET_OBJECTS:ex1_10_obj>)
 add_executable(ex1_11 $<TARGET_OBJECTS:ex1_11_obj>)
 add_executable(ex1_12 $<TARGET_OBJECTS:ex1_12_obj>)
 add_executable(ex1_13 $<TARGET_OBJECTS:ex1_13_obj>)
+
+add_subdirectory(ch2)
+add_executable(ex2_1 $<TARGET_OBJECTS:ex2_1_obj>)
+add_executable(ex2_2 $<TARGET_OBJECTS:ex2_2_obj>)
+target_link_libraries(ex2_2 PRIVATE -lm)
