@@ -22,7 +22,7 @@ int main()
         } else {
             sum -= term;
         }
-        if (term < 1e-6) {
+        if (term < 1e-6) { /* 科学计数法表示 */
             break;
         }
     }
